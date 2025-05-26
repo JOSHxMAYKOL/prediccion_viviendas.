@@ -76,7 +76,7 @@ GitHub permite gestionar y mantener un historial ordenado de los cambios realiza
 
 ## Autor
 
-JOSH MAYKOL P M
+JOSH MAYKOL PEREZ
 
 ---
 
