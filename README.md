@@ -45,7 +45,7 @@ Este proyecto tiene como objetivo desarrollar modelos de Machine Learning para p
 
 ## Autor
 
-[Tu Nombre]
+JOSH MAYKOL P. M.
 
 ---
 
