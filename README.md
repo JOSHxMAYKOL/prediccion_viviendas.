@@ -71,7 +71,8 @@ GitHub permite gestionar y mantener un historial ordenado de los cambios realiza
 
 1. Clonar el repositorio con:  
    ```bash
-   git clone <[URL_del_repositorio](https://colab.research.google.com/drive/1-xou-tPAH28zgJ7KxHHXofI-hYM8ycg4#scrollTo=OBQbJvR2Jmsd)>
+   git clone <[URL_del_repositor>
+   https://colab.research.google.com/drive/1-xou-tPAH28zgJ7KxHHXofI-hYM8ycg4#scrollTo=OBQbJvR2Jmsd
 
 ## Autor
 
