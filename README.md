@@ -1,47 +1,77 @@
 # Predicción de Precios de Viviendas con Redes Neuronales
 
-## Descripción del Proyecto
+## Objetivo
 
-Este proyecto tiene como objetivo desarrollar modelos de Machine Learning para predecir precios de viviendas utilizando datos reales. Se implementa una regresión lineal simple y una red neuronal artificial, ambas usando Python y TensorFlow/Keras. Además, se visualizan los resultados y se aplican buenas prácticas de programación y control de versiones con GitHub.
+Investigar los fundamentos de redes neuronales y regresión lineal, y aplicar estos conocimientos para construir, entrenar y evaluar modelos que predigan precios de viviendas utilizando Python y TensorFlow/Keras. Además, integrar visualización de datos y control de versiones con GitHub.
+
+---
+
+## Preguntas Teóricas
+
+### ¿Qué es una red neuronal artificial?
+
+Una red neuronal artificial es un modelo computacional inspirado en las neuronas del cerebro humano, compuesto por capas de nodos (neuronas) interconectados que procesan información para aprender patrones complejos y resolver problemas de clasificación o regresión.
+
+### ¿Qué es una regresión lineal y cómo se aplica en Machine Learning?
+
+La regresión lineal es un método estadístico que modela la relación entre una variable dependiente y una o más variables independientes mediante una función lineal. En Machine Learning, se usa para predecir valores continuos ajustando una línea que minimice el error entre las predicciones y los datos reales.
+
+### ¿Para qué sirve TensorFlow/Keras en el desarrollo de modelos de Machine Learning?
+
+TensorFlow es una biblioteca de código abierto para computación numérica y aprendizaje automático que facilita la creación y entrenamiento de modelos complejos, incluyendo redes neuronales. Keras es una API de alto nivel que simplifica la construcción de modelos sobre TensorFlow con una sintaxis intuitiva y rápida.
+
+### ¿Por qué es importante el control de versiones con GitHub?
+
+GitHub permite gestionar y mantener un historial ordenado de los cambios realizados en el código fuente, facilitando la colaboración, recuperación de versiones previas, y asegurando un desarrollo organizado y seguro.
+
+---
 
 ## Metodología
 
-1. **Análisis Teórico:**  
-   Se investigaron los fundamentos de redes neuronales artificiales, regresión lineal y el uso de TensorFlow/Keras como herramienta para el desarrollo de modelos de aprendizaje automático. Se explicó la importancia del control de versiones con GitHub para la gestión eficiente del código.
+1. **Preparación del entorno:**  
+   - Instalación de Python y librerías: TensorFlow, Keras, Matplotlib, NumPy, Pandas, Scikit-learn.  
+   - Creación e inicialización del repositorio en GitHub con archivo README.md.
 
-2. **Preparación del Entorno:**  
-   Se configuró un entorno de desarrollo con Python, instalando las librerías necesarias: TensorFlow, Keras, Matplotlib, NumPy, Pandas y Scikit-learn. Se inicializó un repositorio en GitHub para almacenar el proyecto.
+2. **Carga y análisis del dataset:**  
+   - Se utilizó el dataset California Housing de Scikit-learn con características relevantes de viviendas y precios.
 
-3. **Implementación Práctica:**  
-   - Se cargó el dataset California Housing disponible en Scikit-learn.  
-   - Se aplicó regresión lineal simple para predecir el precio a partir de la variable promedio de habitaciones (`AveRooms`).  
-   - Se construyó y entrenó una red neuronal con múltiples variables para mejorar la precisión de la predicción.  
-   - Se graficaron los resultados para comparar valores reales y predicciones.  
-   - Se utilizaron estructuras básicas de programación como listas y ciclos para calcular métricas de error.
+3. **Implementación de modelos:**  
+   - **Regresión lineal simple:** predicción basada en una sola variable (`AveRooms`).  
+   - **Red neuronal:** modelo secuencial con varias capas y activaciones ReLU, entrenado con múltiples variables para mejorar la predicción.
+
+4. **Visualización de resultados:**  
+   - Gráficos de dispersión para comparar predicciones vs valores reales.  
+   - Cálculo y presentación del error absoluto medio.
+
+5. **Control de versiones:**  
+   - Subida y actualización del código y documentación en GitHub para mantener un registro de avances y facilitar la entrega.
+
+---
 
 ## Resultados
 
-- La regresión lineal simple permitió observar una relación lineal básica entre la cantidad promedio de habitaciones y el precio de la vivienda, aunque con limitaciones en precisión.  
-- La red neuronal mostró mejor desempeño, ajustando mejor las predicciones a los valores reales gracias a la incorporación de múltiples variables y capas ocultas con activaciones no lineales.  
-- Los gráficos generados muestran visualmente la aproximación de ambos modelos al conjunto de datos de prueba.  
-- El error absoluto medio calculado con la red neuronal fue de aproximadamente *[indicar el valor que obtuviste]*, lo que indica un buen nivel de precisión para un modelo básico.
+- La regresión lineal simple mostró una relación básica entre el promedio de habitaciones y el precio de vivienda, con limitaciones en precisión.  
+- La red neuronal logró una mejor aproximación a los valores reales al considerar múltiples características y capas ocultas.  
+- El error absoluto medio del modelo de red neuronal fue de aproximadamente **[colocar valor obtenido al ejecutar]**.  
+- Los gráficos reflejaron visualmente la mejora en la predicción con el uso de redes neuronales.
+
+---
 
 ## Conclusiones Personales
 
-- Las redes neuronales son herramientas potentes para capturar relaciones complejas entre variables que modelos lineales simples no pueden detectar.  
-- TensorFlow/Keras facilita mucho la implementación y entrenamiento de modelos de Deep Learning con código claro y compacto.  
-- El uso de control de versiones con GitHub es fundamental para mantener un historial organizado, colaborar y proteger el código.  
-- Trabajar con datasets reales como el California Housing permite comprender mejor los retos y técnicas necesarias en proyectos de predicción.
+- La regresión lineal es útil para entender relaciones simples, pero tiene limitaciones cuando los datos presentan relaciones complejas.  
+- Las redes neuronales permiten capturar patrones no lineales y múltiples variables para mejorar la predicción.  
+- TensorFlow/Keras es una herramienta potente y accesible para implementar modelos de Deep Learning.  
+- El uso de GitHub es fundamental para mantener la integridad del proyecto y colaborar eficazmente.  
+- Trabajar en Google Colab facilita la experimentación con recursos en la nube sin complicaciones de instalación local.
 
 ---
 
-## Cómo ejecutar el proyecto
+## ¿Cómo ejecutar el proyecto?
 
-1. Clonar este repositorio.  
-2. Ejecutar el notebook `prediccion_viviendas.ipynb` en Google Colab o localmente.  
-3. Revisar las celdas de código y gráficos para entender el flujo del proyecto.
-
----
+1. Clonar el repositorio con:  
+   ```bash
+   git clone <URL_del_repositorio>
 
 ## Autor
 
